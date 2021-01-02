@@ -4,7 +4,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 const ProjectDetails = (props) => {
   // const id = props.match.params.id;
-  const { project } = props;
+  const { project } = props; //destructuring to get the projects
   if (project) {
     return (
       <div className="container section project-details">
@@ -17,7 +17,7 @@ const ProjectDetails = (props) => {
             <div>
               Posted by {project.authorFirstName} {project.authorLastName}
             </div>
-            <div>{project.createdAt}</div>
+            <div>26th oct 99</div>
           </div>
         </div>
       </div>
@@ -37,7 +37,8 @@ const ProjectDetails = (props) => {
   }
 };
 const mapStateToProps = (state, ownProps) => {
-  const id = ownProps.match.params.id;
+  // console.log(state)
+  const id = ownProps.match.params.id; //we use ownProps, b'coz the props are not available outside the component function.
   const projects = state.firestore.data.projects;
   const project = projects ? projects[id] : null;
   return {
