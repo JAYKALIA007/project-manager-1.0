@@ -5,14 +5,15 @@ import SignOut from "./SignOut";
 import { connect } from "react-redux";
 function NavBar(props) {
   const { auth } = props;
+  const authIsValid = auth.uid; //if logged in we get a valid uid, if logged out the uid is null
+  const displayLink = authIsValid ? <SignIn /> : <SignOut />; //a ternary operator to display tthe content acordingly
   return (
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
         <Link to="/" className="brand-logo">
           ProjectManager
         </Link>
-        <SignIn />
-        <SignOut />
+        {auth.isLoaded && displayLink}
       </div>
     </nav>
   );
@@ -20,7 +21,7 @@ function NavBar(props) {
 const mapStateToProps = (state) => {
   // console.log(state);
   return {
-    auth: state.firebase.auth,
+    auth: state.firebase.auth, //match the state to props to get the auth status
   };
 };
 export default connect(mapStateToProps)(NavBar);
