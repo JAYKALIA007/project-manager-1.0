@@ -11,7 +11,7 @@ class DashBoard extends React.Component {
     const { projects, auth } = this.props;
     if (!auth.uid) {
       return <Redirect to="/signin" />;
-    }
+    } // if the user is not loggedIn, we want to redirect them to the /signin page
 
     return (
       <div className="dashboard container">
@@ -30,7 +30,7 @@ class DashBoard extends React.Component {
 const mapStateToProps = (state) => {
   return {
     projects: state.firestore.ordered.projects,
-    auth: state.firebase.auth,
+    auth: state.firebase.auth, //using this to get the auth status.
   };
 };
 export default compose(
