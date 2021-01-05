@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
+import moment from "moment";
 const ProjectDetails = (props) => {
   // const id = props.match.params.id;
   const { project, auth } = props; //destructuring to get the projects
@@ -21,7 +22,9 @@ const ProjectDetails = (props) => {
             <div>
               Posted by {project.authorFirstName} {project.authorLastName}
             </div>
-            <div>26th oct 99</div>
+            <div>
+              {moment(props.project.createdAt.toDate()).format("MMM Do YYYY")}
+            </div>
           </div>
         </div>
       </div>

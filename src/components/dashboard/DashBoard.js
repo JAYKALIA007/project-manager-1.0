@@ -35,5 +35,5 @@ const mapStateToProps = (state) => {
 };
 export default compose(
   connect(mapStateToProps),
-  firestoreConnect([{ collection: "projects" }]) //here we are syncing to the "projects" collection from db
+  firestoreConnect([{ collection: "projects", orderBy: ["createdAt", "desc"] }]) //here we are syncing to the "projects" collection from db
 )(DashBoard);

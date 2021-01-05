@@ -14,7 +14,7 @@ function SignIn(props) {
         </li>
         <li>
           <NavLink className="btn btn-floating pink lighten-1" to="/">
-            JP
+            {props.profile.initials ? props.profile.initials : null}
           </NavLink>
         </li>
       </ul>
