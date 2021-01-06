@@ -35,6 +35,7 @@ class SignUp extends Component {
               placeholder="E-mail"
               id="email"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div className="input-field">
@@ -43,6 +44,7 @@ class SignUp extends Component {
               placeholder="Password"
               id="password"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div className="input-field">
@@ -51,6 +53,7 @@ class SignUp extends Component {
               placeholder="First Name"
               id="firstName"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div className="input-field">
@@ -59,6 +62,7 @@ class SignUp extends Component {
               placeholder="Last Name "
               id="lastName"
               onChange={this.handleChange}
+              required
             />
           </div>
           <div className="input-field">
