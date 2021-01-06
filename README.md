@@ -24,7 +24,3 @@ and
 
 **Project Content** ( what is your project about )
 On filling up this form, you will be able to see your contribution in the dashboard as well.
-
-![alt text](https://github.com/JAYKALIA007/project-manager-1.0/blob/master/create.png?raw=true)
-![alt text](https://github.com/JAYKALIA007/project-manager-1.0/blob/master/Dashboard.png?raw=true)
-![alt text](https://github.com/JAYKALIA007/project-manager-1.0/blob/master/signup.png?raw=true)
