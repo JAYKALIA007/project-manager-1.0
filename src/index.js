@@ -18,7 +18,6 @@ import firebase from "firebase/app";
 //for render on auth ready
 import { useSelector } from "react-redux";
 import { isLoaded } from "react-redux-firebase";
-
 const store = createStore(
   rootReducer,
   compose(
