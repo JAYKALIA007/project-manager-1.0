@@ -1,26 +1,28 @@
-# A project management tool
+# PROJECT MANAGER 1.0
 
-**where you can share the details of the project that you are currently working on, and be updated with what the others are upto.**
+A project management app where you can share as well as get new project ideas.
 
-Let us understand what this is all about.
+---
 
-This is a project managemment tool complete with authentication and cloud functions as well, wherein you can :
+Features:
 
-**Sign Up:**
-Create an account via your email-id, password , first name and last name.
+- **user authentication** using firebase's authentication,
+- **signup** for an account using your personal details,
+- **login** to the created account via your email and password,
+- go to **dashboard** to look at ideas,
+- go to **new project** to add your idea.
+  On entering a new project, you will be able to view your contribution as well.
 
-**Log In:**
-If you have already created an account, you can easily login via your email id and password.
+## \*\* Pre-reqs
 
-**Go to the DashBoard section :**
-to look at what everyone else is doing right now.
+- clone the repository
+  `git clone https://github.com/JAYKALIA007/project-manager-1.0.git`
 
-**New Project :**
-to keep others updated about what you are doing right now.
-Here, you will be asked to fill-up a form which asks you about the
+- Install dependencies
+  `cd project-manager-1.0 && npm i`
 
-**Project Title**( what is your project )
-and
+- Run tests
+  `npm run test`
 
-**Project Content** ( what is your project about )
-On filling up this form, you will be able to see your contribution in the dashboard as well.
+- Build and run
+  `npm run build && npm start`
