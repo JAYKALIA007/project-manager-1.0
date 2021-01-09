@@ -19,8 +19,9 @@ to look at what everyone else is doing right now.
 to keep others updated about what you are doing right now.
 Here, you will be asked to fill-up a form which asks you about the
 
-* **Project Title**( what is your project )
-and
+   * **Project Title**( what is your project )
+   and
 
-* **Project Content** ( what is your project about )
+   * **Project Content** ( what is your project about )
+
 On filling up this form, you will be able to see your contribution in the dashboard as well.
