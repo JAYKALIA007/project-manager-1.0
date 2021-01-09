@@ -25,3 +25,24 @@ Here, you will be asked to fill-up a form which asks you about the
    * **Project Content** ( what is your project about )
 
 On filling up this form, you will be able to see your contribution in the dashboard as well.
+
+##  Pre-reqs
+- clone the repository
+
+
+
+
+
+  `git clone https://github.com/JAYKALIA007/project-manager-1.0.git`
+
+- Install dependencies
+
+  `cd project-manager-1.0 && npm i`
+
+- Run tests
+
+  `npm run test`
+
+- Build and run
+
+  `npm run build && npm start`
