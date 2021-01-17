@@ -10,7 +10,9 @@ function SignIn(props) {
           <NavLink to="/create">New Project</NavLink>
         </li>
         <li>
-          <a onClick={props.signOut}>Logout</a>
+          <a href="/#" onClick={props.signOut}>
+            Logout
+          </a>
         </li>
         <li>
           <NavLink className="btn btn-floating pink lighten-1" to="/">
