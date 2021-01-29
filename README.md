@@ -4,7 +4,7 @@
 
 Let us understand what this is all about.
 
-This is a project managemment tool complete with authentication and cloud functions as well, wherein you can :
+This is a project management tool complete with authentication and cloud functions as well, wherein you can :
 
 - **Sign Up:**
   Create an account via your email-id, password , first name and last name.
